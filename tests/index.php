@@ -1,18 +1,5 @@
 <?php
 
-/*
- * PHP-Auth (https://github.com/delight-im/PHP-Auth)
- * Copyright (c) delight.im (https://www.delight.im/)
- * Licensed under the MIT License (https://opensource.org/licenses/MIT)
- */
-
-/*
- * WARNING:
- *
- * Do *not* use these files from the `tests` directory as the foundation
- * for the usage of this library in your own code. Instead, please follow
- * the `README.md` file in the root directory of this project.
- */
 
 // enable error reporting
 \error_reporting(\E_ALL);
@@ -1084,3 +1071,7 @@ function createRolesOptions() {
 
 	return $out;
 }
+
+        
+        
+        

@@ -1,6 +1,3 @@
--- PHP-Auth (https://github.com/delight-im/PHP-Auth)
--- Copyright (c) delight.im (https://www.delight.im/)
--- Licensed under the MIT License (https://opensource.org/licenses/MIT)
 
 PRAGMA foreign_keys = OFF;
 
@@ -55,6 +52,9 @@ CREATE TABLE "users_throttling" (
 	"bucket" VARCHAR(44) PRIMARY KEY NOT NULL,
 	"tokens" REAL NOT NULL CHECK ("tokens" >= 0),
 	"replenished_at" INTEGER NOT NULL CHECK ("replenished_at" >= 0),
+	
+	
+	    
 	"expires_at" INTEGER NOT NULL CHECK ("expires_at" >= 0)
 );
 CREATE INDEX "users_throttling.expires_at" ON "users_throttling" ("expires_at");

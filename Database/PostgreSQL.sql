@@ -1,6 +1,4 @@
--- PHP-Auth (https://github.com/delight-im/PHP-Auth)
--- Copyright (c) delight.im (https://www.delight.im/)
--- Licensed under the MIT License (https://opensource.org/licenses/MIT)
+
 
 BEGIN;
 
@@ -53,6 +51,9 @@ CREATE TABLE IF NOT EXISTS "users_throttling" (
 	"replenished_at" INTEGER NOT NULL CHECK ("replenished_at" >= 0),
 	"expires_at" INTEGER NOT NULL CHECK ("expires_at" >= 0)
 );
+
+
+  
 CREATE INDEX IF NOT EXISTS "expires_at" ON "users_throttling" ("expires_at");
 
 COMMIT;
